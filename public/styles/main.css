@@ -1,0 +1,43 @@
+body {
+    background-color: ivory;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+footer {
+   position: fixed;  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;    
+}
+
+header {
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+p, pre {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.recipe {
+    list-style-type: none;
+}
+
+.recipe-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #0000EE;    
+}

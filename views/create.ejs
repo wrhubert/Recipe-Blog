@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Recipes</title>
+</head>
+
+<main>
+  <h1> Time to share your creation with the World! </h1>
+
+  <p> </p>
+
+  <pre>Welcome to the Create Recpies page!  Here you can fill out the details to your recipe below.  The three required fields for you to fill in
+include the name of your creation, the ingredients and the directions.  Feel free to use as much space as your need for the ingredients and directions.
+If you are able, please include the prep/cook time and feel free to share your name so that others can recognize your work of art.  
+
+Remember, you can edit or delete your recipe at any time so you have full control over your creation.  
+
+Thank you in advance for sharing your delicious recipe!
+  </pre>
+ 
+  <form action="/submit" method="POST">
+      <input type="text" name="rName" placeholder="Name of the recipe">
+      <p></p>
+      <input type="text" name="cName" placeholder="Your name (optional)">
+      <p></p>
+      <input type="text" name="prep" placeholder="Prep time:">
+      <input type="text" name="cook" placeholder="Cook time:">
+      <p></p>
+      <textarea rows="8" cols="100" name="ingredients" placeholder="Enter your ingredients"></textarea>
+      <p></p>
+      <textarea rows="16" cols="100" name="directions" placeholder="Enter your directions"></textarea>&emsp;
+      <input id="submit-button" type="submit" value="Submit">
+      <p></p>
+  </form>
+</main>
+
+<%- include("partials/footer.ejs") %>

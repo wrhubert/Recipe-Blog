@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=currentRecipe.rName%></title>
+</head>
+
+<main>
+    <h1> <%=currentRecipe.rName%> </h1>
+    <p>This delightful recipe comes to us from <%=currentRecipe.cName%>.</p>
+    <h3>Prep. Time: <span><%=currentRecipe.prep%></span> &emsp; &emsp; &emsp; 
+        Cook Time: <span> <%=currentRecipe.cook%></h3>
+    <h2>Ingredients:</h2>
+    <p><%=currentRecipe.ingredients%></p>
+    <h2>Cooking Directions: </h2>
+    <p><%=currentRecipe.directions%></p>
+</main>
+
+<%- include("partials/footer.ejs") %>

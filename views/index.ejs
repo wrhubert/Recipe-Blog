@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantastic Recipes</title>    
+</head>
+
+<main>
+    <h1> Welcome to the Fantastic Recipes Blog! </h1>
+
+    <p> Check out our list of recipes below!</p>
+ 
+    <form action="/recipe" method="POST">
+        <% for(let name of recipeList) { %> 
+            <ul>
+                <li class="recipe">                
+                <button class="recipe-button" name="rId" value=<%=name.rId%>><%= name.rName %></button>
+                </li>
+            </ul>           
+        <% } %>       
+    </form>
+</main>
+
+<%- include("partials/footer.ejs") %>
+     
